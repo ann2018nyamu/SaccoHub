@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="muhia.dams.saccohub.ui.auth.login.LoginFragment"
+        android:label="login_fragment"
+        tools:layout="@layout/login_fragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_onBoardingFragment"
+            app:destination="@id/onBoardingFragment"
+            />
+        <action
+            android:id="@+id/action_loginFragment_to_personalDetailsFragment"
+            app:destination="@id/personalDetailsFragment"
+            app:enterAnim="@anim/anim_fade_in"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="muhia.dams.saccohub.ui.auth.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" >
+        <action
+            android:id="@+id/action_onBoardingFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@anim/anim_fade_in"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_fade_out"
+           />
+    </fragment>
+    <fragment
+        android:id="@+id/personalDetailsFragment"
+        android:name="muhia.dams.saccohub.ui.auth.registration.PersonalDetailsFragment"
+        android:label="PersonalDetailsFragment" >
+        <action
+            android:id="@+id/action_personalDetailsFragment_to_otpCodeFragment"
+            app:destination="@id/otpCodeFragment"
+            app:enterAnim="@anim/anim_fade_in"
+            app:exitAnim="@anim/anim_fade_out"
+            app:popEnterAnim="@anim/anim_fade_in"
+            app:popExitAnim="@anim/anim_fade_out"/>
+    </fragment>
+    <fragment
+        android:id="@+id/otpCodeFragment"
+        android:name="muhia.dams.saccohub.ui.auth.registration.OtpCodeFragment"
+        android:label="fragment_otp_code"
+        tools:layout="@layout/fragment_otp_code" >
+        <action
+            android:id="@+id/action_otpCodeFragment_to_dashboardFragment"
+            app:destination="@id/dashboardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="muhia.dams.saccohub.ui.homepage.DashboardFragment"
+        android:label="DashboardFragment" />
+</navigation>

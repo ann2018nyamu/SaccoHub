@@ -1,0 +1,135 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+    <style name="FragmentTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/textColor</item>
+        <item name="colorPrimaryDark">@color/textColor</item>
+        <item name="colorAccent">@color/textColor</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:statusBarColor">@color/textColor</item>
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent</item>
+    </style>
+
+    <style name="LOGIN_PIN_Pad_MaterialButtonDefaultStyle" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_gravity">center_horizontal|center_vertical</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="fontFamily">@font/poppins</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">12dp</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:paddingBottom">12dp</item>
+        <item name="android:clickable">true</item>
+        <item name="rippleColor">@android:color/transparent</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+    <style name="keyboard_row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:showDividers">none</item>
+    </style>
+
+    <style name="LoginLayoutStyle.white" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="android:fontFamily">@font/poppins</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:colorAccent">@color/black</item>
+        <item name="android:colorActivatedHighlight">@color/black</item>
+    </style>
+
+    <style name="MyTextInputLayout_overlay">
+        <item name="colorOnSurface">@color/buttonColor</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="backgroundColor">@color/buttonColor</item>
+    </style>
+
+    <style name="ColoredEdittextStyle" parent="Widget.MaterialComponents.TextInputLayout.FilledBox">
+        <item name="boxStrokeColor">@color/etColor</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name ="boxBackgroundColor">@color/etColor</item>
+        <item name ="hintTextColor">@color/buttonColor</item>
+        <item name ="android:textColorHint">@color/hintColor</item>
+        <item name="boxStrokeWidth">0.0dp</item>
+        <item name="colorOnSurface">#FFC002</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="boxStrokeWidthFocused">0.0dp</item>
+        <item name="boxCornerRadiusBottomEnd">9dp</item>
+        <item name="boxCornerRadiusBottomStart">9dp</item>
+        <item name="boxCornerRadiusTopEnd">9dp</item>
+        <item name="boxCornerRadiusTopStart">9dp</item>
+        <item name="colorPrimary">@color/etColor</item>
+        <item name="colorAccent">@color/etColor</item>
+
+    </style>
+   <!-- <style name="textInputLayoutOutlinedBoxCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <item name="boxStrokeColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="android:textSize">11sp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>-->
+
+ <style name="SplashScreenTheme" parent = "Theme.AppCompat.Light.NoActionBar">
+     <item name="android:statusBarColor">@color/white</item>
+     <item name="fontFamily">@font/poppins</item>
+ </style>
+
+    <style name="ButtonTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/buttonColor</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="fontFamily">@font/poppins</item>
+
+    </style>
+    <style name="OutlineStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/hintColor</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name ="hintTextColor">@color/buttonColor</item>
+        <item name ="android:textColorHint">@color/hintColor</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="colorOnSurface">#FFC002</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+        <item name="colorPrimary">@color/etColor</item>
+        <item name="fontFamily">@font/poppins</item>
+
+
+    </style>
+
+    <style name="textInputLayoutOutlinedBoxCustom" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/stroke_state</item>
+        <item name="android:textColor">@color/hintColor</item>
+        <item name="android:textColorHint">@color/hintColor</item>
+        <item name="colorOnSurface">@color/buttonColor</item>
+
+        <item name="hintTextColor">@color/hintColor</item>
+        <item name="android:textSelectHandle">@color/buttonColor</item>
+        <item name="android:radius">1.4dp</item>
+        <item name="boxStrokeWidthFocused">1dp</item>
+    </style>
+
+
+</resources>

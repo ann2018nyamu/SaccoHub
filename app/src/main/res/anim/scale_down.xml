@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SKimani Eskei on 5/27/20 9:13 PM
+  ~  *Project ChurchApp
+  ~  * Copyright (c) Eclectics International Ltd  2020 . All rights reserved.
+  ~  * Last modified 6/21/19 4:14 PM
+  ~  */
+  -->
+
+<scale xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/overshoot"
+    android:fromXScale="1.0"
+    android:toXScale="0.0"
+    android:fromYScale="1.0"
+    android:toYScale="0.0"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:duration="150" />

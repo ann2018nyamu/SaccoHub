@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by DAMS on 14/4/21 8:32 PM
+  ~  *Project ChurchApp tab_selector.xml
+  ~  * Copyright (c) Eclectics International Ltd  2020 . All rights reserved.
+  ~  * Last modified 6/4/20 2:21 PM
+  ~  */
+  -->
+<shape
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thickness="8dp"
+    android:useLevel="false"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid
+        android:color="@color/buttonColor" />
+</shape>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SKimani Eskei on 5/27/20 9:13 PM
+  ~  *Project ChurchApp
+  ~  * Copyright (c) Eclectics International Ltd  2020 . All rights reserved.
+  ~  * Last modified 6/21/19 4:14 PM
+  ~  */
+  -->
+
+<set
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/anticipate_interpolator">
+    <alpha
+        android:fromAlpha="1"
+        android:toAlpha="0"
+        android:duration="200" />
+    <translate
+        android:fromYDelta="0"
+        android:toYDelta="30%p"
+        android:duration="200" />
+
+</set>

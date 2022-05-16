@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ /**
+  ~  * Created by SKimani Eskei on 5/27/20 9:13 PM
+  ~  *Project ChurchApp
+  ~  * Copyright (c) Eclectics International Ltd  2020 . All rights reserved.
+  ~  * Last modified 5/15/20 4:39 PM
+  ~  */
+  -->
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item><layer-list>
+        <item>
+            <shape>
+
+                <corners android:radius="5dp" />
+                <padding
+                    android:bottom="2dp"
+                    android:left="2dp"
+                    android:right="10dp"
+                    android:top="2dp" />
+                <stroke
+                    android:width="1dp"
+                    android:color="#979191"/>
+            </shape>
+        </item>
+        <item >
+            <bitmap android:gravity="center|right"
+                android:src="@drawable/down_ic"
+                />
+
+        </item>
+    </layer-list></item>
+</selector>

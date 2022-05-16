@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".ui.auth.registration.OtpCodeFragment">
+
+            <TextView
+                android:id="@+id/tv_ver_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_22dp"
+                android:layout_marginTop="@dimen/_35dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:text="@string/please_enter_your_verification_code"
+                android:textSize="@dimen/_20sp"
+                 />
+            <LinearLayout
+                android:id="@+id/layout_code"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60dp"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/_20dp"
+                >
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_one"
+                    style="@style/ColoredEdittextStyle"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="@dimen/_10dp"
+                    android:layout_marginEnd="@dimen/_20dp"
+                    android:textColor="@color/black">
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_input_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxEms="1"
+                        android:maxLength="1"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_two"
+                    style="@style/ColoredEdittextStyle"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    android:layout_marginEnd="@dimen/_20dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_input_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxEms="1"
+                        android:maxLength="1"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_three"
+                    style="@style/ColoredEdittextStyle"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="@dimen/_20dp"
+                    android:textColor="@color/black"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_input_three"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxEms="1"
+                        android:maxLength="1"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/input_four"
+                    style="@style/ColoredEdittextStyle"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:textColor="@color/black"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/et_input_four"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center_horizontal"
+                        android:inputType="number"
+                        android:maxEms="1"
+                        android:maxLength="1"
+                        android:padding="10dp"
+                        android:textStyle="bold" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/tv_rcv_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:text="Didn’t receive Code?"
+                android:textColor="@color/hintColor"
+                android:textSize="@dimen/_12sp"
+                 />
+
+            <TextView
+                android:id="@+id/tv_resend_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Resend Code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sp"
+                 />
+            </LinearLayout>
+
+            <TableLayout
+                android:id="@+id/tableLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_horizontal"
+                android:layout_marginStart="@dimen/_10dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="@dimen/_10dp"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/_20dp"
+                >
+
+                <TableRow style="@style/keyboard_row"
+                    android:layout_marginTop="@dimen/_20dp">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"
+                        android:background="@drawable/pin_bg"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:clickable="true"
+                        android:text="7"
+                        android:focusable="true" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="8" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="9" />
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row"
+                    android:layout_marginTop="@dimen/_20dp">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="4" />
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="5" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="6" />
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row"
+                    android:layout_marginTop="@dimen/_20dp">
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="1" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="2" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="3" />
+                </TableRow>
+
+                <TableRow style="@style/keyboard_row"
+                    android:layout_marginTop="@dimen/_20dp">
+
+                    <ImageView
+                        android:id="@+id/pin_pad"
+                        style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                        android:layout_width="70dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:layout_marginEnd="20dp"
+                        android:clickable="true"
+                        android:focusable="true"
+ />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_32sp"
+                        android:text="0" />
+
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/_10dp"
+                        android:layout_marginEnd="@dimen/_10dp"                        android:background="@drawable/pin_bg"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:padding="20dp"
+                        android:src="@drawable/red_backspace_button" />
+                </TableRow>
+            </TableLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_otp_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20dp"
+                android:layout_marginEnd="@dimen/_20dp"
+                android:background="@drawable/btn_normal_bg"
+                android:text="Continue"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_16sp"
+                android:textStyle="bold"
+                android:theme="@style/ButtonTheme"
+                android:layout_marginTop="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_20dp"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

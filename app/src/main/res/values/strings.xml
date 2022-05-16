@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Sacco Hub</string>
+    <string name="powered_eclectics">Powered by: Eclectics</string>
+    <string name="logo">Logo</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip</string>
+    <string name="create_account">Create Account</string>
+    <string name="learn_more">Learn More</string>
+    <string name="intro_screen_description">Intro_screen_description</string>
+    <string name="save_grow">Save and Grow</string>
+    <string name="quick_money">Quick Money Transfer</string>
+    <string name="get_instant_loan">Get Instant Loan</string>
+    <string name="you_can_now_start">You can now start saving and grow \nYourself at the same time</string>
+    <string name="you_can_now_send">You can now send money faster \nAnd safely to your family and \nFriends</string>
+    <string name="you_can_now_get_instant">You can now get instant loans\nFrom the Sacco at\nLow interest rate</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account?</string>
+    <string name="please_enter_your_verification_code">Please enter your verification\nCode</string>
+    <string name="username_email">Username/Email</string>
+    <string name="password">Password</string>
+    <string name="continu">Continue</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="first_name">First Name</string>
+    <string name="surname">Surname</string>
+    <string name="personal_details">Personal details</string>
+    <string name="email_address">Email Address</string>
+    <string name="valid_id_number">Valid ID Number</string>
+    <string name="date_of_birth">Date Of Birth</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="bank_details">Bank details</string>
+    <string name="select_bank">Select Bank</string>
+    <string name="select_branch">Select Branch</string>
+    <string name="account_number">Account Number</string>
+    <string name="account_name">Account name</string>
+    <string name="next_of_kin_details">Next of Kin details</string>
+    <string name="full_names">Full names</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="work_details">Work details</string>
+    <string name="employer">Employer</string>
+    <string name="department">Department</string>
+    <string name="basic_salary">Basic Salary</string>
+    <string name="upload_pay_slip">Upload pay slip</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="loans">Loans</string>
+    <string name="services">Services</string>
+    <string name="accounts">Accounts</string>
+    <string name="statements">Statements</string>
+
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="bank">
+        <item> Select Bank</item>
+        <item>Barclays Bank</item>
+        <item>Cooperative Bank</item>
+        <item>Equity Bank</item>
+    </string-array>
+    <string-array name="bankBranch">
+        <item> Select Branch</item>
+        <item>Barclays Bank</item>
+        <item>Cooperative Bank</item>
+        <item>Equity Bank</item>
+    </string-array>
+    <string-array name="relationship">
+        <item> Relationship</item>
+        <item>Wife</item>
+        <item>Sister</item>
+        <item>Father</item>
+    </string-array>
+    <string-array name="employmentTerm">
+        <item> Employment Term</item>
+        <item>Full</item>
+    </string-array>
+
+
+</resources>
